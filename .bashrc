@@ -221,6 +221,7 @@ fi
 
 # git
 alias gitff="git diff -p --color"
+alias gitco="git commit -m"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
