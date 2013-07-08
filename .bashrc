@@ -220,8 +220,9 @@ if [ -s ~/.nvm/nvm.sh ]; then
 fi
 
 # git
-alias gitff="git diff -p --color"
-alias gitco="git commit -m"
+alias gitd="git diff -p --color"
+alias gitc="git commit -m"
+alias gitl="git log -p --color"
 
 ## ------------------------------
 ## -- 3) User-customized code  --
