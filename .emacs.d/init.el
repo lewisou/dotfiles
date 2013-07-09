@@ -16,6 +16,8 @@
 (require 'whitespace)
 (require 'dired-x)
 (require 'compile)
+(require 'jinja2-mode)
+
 (ido-mode t)
 (menu-bar-mode -1)
 ;; (normal-erase-is-backspace-mode 1)
@@ -75,3 +77,4 @@
 (require 'jade-mode)    
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+(add-to-list 'auto-mode-alist '("\\.jinja$" . jinja2-mode))
