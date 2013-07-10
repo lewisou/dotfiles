@@ -17,6 +17,7 @@
 (require 'dired-x)
 (require 'compile)
 (require 'jinja2-mode)
+(require 'haml-mode)
 
 (ido-mode t)
 (menu-bar-mode -1)
@@ -78,3 +79,5 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 (add-to-list 'auto-mode-alist '("\\.jinja$" . jinja2-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
+(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
