@@ -18,6 +18,7 @@
 (require 'compile)
 (require 'jinja2-mode)
 (require 'haml-mode)
+(require 'yaml-mode)
 
 (ido-mode t)
 (menu-bar-mode -1)
@@ -82,3 +83,4 @@
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 (add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
