@@ -19,6 +19,9 @@
 (require 'jinja2-mode)
 (require 'haml-mode)
 (require 'yaml-mode)
+(require 'nginx-mode)
+(require 'coffee-mode)
+(require 'livescript-mode)
 
 (ido-mode t)
 (menu-bar-mode -1)
@@ -32,6 +35,8 @@
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
 
+
+(custom-set-variables '(coffee-tab-width 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -84,3 +89,6 @@
 (add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 (add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+(add-to-list 'auto-mode-alist '("\\.ls$" . livescript-mode))
